@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  max-width: 100;
+  margin: 0 auto;
+}
+
+.header{
+  background-image: linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+  url(../trucks-6532643_1280.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  color: #FFFDFC;
+  font-size: 25px;
+  font-weight: 800;
+  margin-left: 5%;
+}
+
+.menu .navbar ul li{
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a{
+  font-size: 18px;
+  padding: 20px;
+  color: #FFFDFC;
+  display: block;
+  font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+  color: #CE967B;
+}
+
+#menu{
+  display: none;
+}
+
+.menu-icono{
+  width: 25px;
+}
+
+.menu label{
+  cursor: pointer;
+  display: none;
+}
+
+.header-content{
+  text-align: center;
+}
+
+.header-content h1{
+  font-size: 75px;
+  line-height: 80px;
+  color: #F9FAFC;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.header-content p{
+  font-size: 16px;
+  color: #C5C5C5;
+  padding: 0 250px;
+  margin-bottom: 25px;
+}
+
+.btn-1{
+  display: inline-block;
+  padding: 11px 35px;
+  background-color: #CE967B;
+  color: #F9FAFC;
+  text-transform: uppercase;
+}
+
+.btn-1:hover{
+  background-color: #ebad8d;
+}
+
+/*Descripcion*/
+
+.coffee {
+  padding: 100px 0;
+  background-color: #e1e2e6;
+  position: relative;
+}
+
+.coffee-content {
+  text-align: center;
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.coffee-content h2 {
+  font-size: 55px;
+  line-height: 70px;
+  color: #323337;
+  text-transform: uppercase;
+  padding: 0 20px; /* Ajusta el padding para no ser demasiado grande */
+  margin-bottom: 15px;
+}
+
+.txt-p {
+  font-size: 16px;
+  color: #414247;
+  padding: 0 20px; /* Ajusta el padding para no ser demasiado grande */
+  margin-bottom: 60px; /* Aumenta el margen inferior para separar más del grupo */
+}
+
+.coffee-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Reduce el margen inferior para acercar el botón */
+  gap: 20px; /* Añade un gap entre los elementos */
+}
+
+.coffee-1 {
+  flex: 1; /* Hace que cada .coffee-1 tome el mismo espacio */
+  padding: 0 25px;
+  text-align: center; /* Asegura que el texto dentro de .coffee-1 esté centrado */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coffee-1 img {
+  width: 100%;
+  max-width: 200px; /* Limita el ancho máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.coffee-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.coffee-1 h3 {
+  color: #323337;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.coffee-1 p {
+  flex-grow: 1; /* Hace que el párrafo tome el espacio disponible */
+}
+
+.btn-1 {
+  text-decoration: none;
+  display: inline-block;
+
+  color: #fff;
+  background-color: #323337;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-top: 10px; /* Añade un margen superior para separar del grupo */
+  align-self: center; /* Centra el botón horizontalmente */
+}
+
+
+/*Servicios*/
+
+.services{
+  background-image: linear-gradient(
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.7)),
+      url(../digger-1867268_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.services-content{
+  text-align: center;
+}
+
+.services-content h2{
+  font-size: 50px;
+  line-height: 70px;
+  color: #F9FAFC;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.services-content p{
+  font-size: 16px;
+}
+
+.services-group{
+  display: flex;
+}
+
+.contenido {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+
+.card {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.card img {
+  width: 100%;
+  height: 210px;
+}
+
+.card .contenido {
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card .contenido h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.card .contenido p {
+  line-height: 1.5;
+  color: #6a6a6a;
+  margin-bottom: 15px;
+}
+
+.card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #CE967B;
+  border: 1px solid #CE967B;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-top: auto;
+  align-self: center; 
+}
+
+.card .contenido a:hover {
+  background: #CE967B;
+  color: #fff;
+}
+
+
+/*Termina*/
+
+.services-1{
+  padding: 0 100px;
+}
+
+.services-1 img{
+   width: 25px;
+   margin-bottom: 15px;
+}
+
+.services-1 h3{
+  color: #eaccb3;
+  font-size: 18px;
+}
+
+.general{
+  display: flex;
+}
+
+.general-1{
+  width: 50%;
+  padding: 100px 250px 100px 100px;
+  background-color: #E1E2E6;
+}
+
+.general-2{
+  background-image: url(../expression-3073830_1280.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+.general-3{
+  background-image: url(../worker-6586718_1280.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+h2{
+  font-size: 55px;
+  line-height: 70px;
+  color: #323337;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+p{
+  font-size: 16px;
+  color: #414247;
+  margin: 25px 0 45px 0;
+}
+
+.blog {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.blog-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-1{
+  padding: 15px 55px;
+}
+
+.blog-1 img{
+  width: 250px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.blog-1 h3{
+  font-size: 25px;
+  color: #323337;
+}
+
+.footer{
+  padding: 100px 0;
+  background-color: #000000;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.link h3{font-size: 18px;
+  color: #F9FAFC;
+  margin-bottom: 15px;
+}
+
+.link a{
+  font-size: 16px;
+  color: #c5c5c5;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.pie-pagina{
+  width: 100%;
+  background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+  color: aqua;
+}
+
+.pie-pagina .grupo-2{
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px){
+  .pie-pagina .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+
+
+@media(max-width:991px){
+  .menu{
+    padding: 30px;
+  }
+  .menu label{
+    display: initial;
+  }
+  .menu .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #323337;
+    display: none;
+  }
+  .menu .navbar ul li{
+    width: 100%;
+  }
+  
+  #menu:checked ~ .navbar{
+    display: initial;
+  }
+
+  .header-content{
+    padding: 100px 30px;
+  }
+  .header-content p {
+    padding: 0;
+  }
+
+  .coffe{
+    padding: 30px;
+  }
+
+  .coffe-content h2{
+    padding: 0;
+  }
+
+  .txt-p{
+    padding: 0;
+  }
+
+  .coffee-group{
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .coffee-img{
+    display: none;
+  }
+
+  .services{
+    padding: 30px;
+  }
+
+  .services-content p{
+    padding: 0;
+  }
+  .services-group{
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .services-1{
+    margin-bottom: 25px;
+  }
+  .general{
+    flex-direction: column;
+  }
+  .general-1{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+  .general-2, .general-3{
+    display: none;
+  }
+  .blog{
+    padding: 30px;
+  }
+  .blog-content{
+    flex-direction: column;
+  }
+  .blog-1{
+    padding: 0;
+  }
+  .footer{
+    padding: 30px;
+  }
+  .footer-content{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/*
+Extras
+*/
+
+/* Estilos del fondo del modal */
+.modal {
+  display: none; /* Escondido por defecto */
+  position: fixed;
+  z-index: 1000; /* Asegura que esté sobre otros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Si el contenido es grande, permite scroll */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+}
+
+/* Contenedor del contenido del modal */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto; /* Centrado verticalmente */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Ancho del modal */
+  max-width: 500px; /* Máximo ancho */
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de cerrar el modal */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
